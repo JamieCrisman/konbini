@@ -1,27 +1,27 @@
 /*eslint-env node*/
 var webpackConfig = require("../webpack.config.js");
-var _ = require("lodash");
+// var _ = require("lodash");
 
-function base() {
-  return {
-    frameworks: ["mocha"],
-    files: ["tests.webpack.js"],
-    preprocessors: {
-      "tests.webpack.js": [ "webpack", "sourcemap" ]
-    },
-    webpack: webpackConfig,
-    webpackServer: {
-      noInfo: true
-    }
-  };
-}
+// function base() {
+//   return {
+//     frameworks: ["mocha"],
+//     files: ["tests.webpack.js"],
+//     preprocessors: {
+//       "tests.webpack.js": [ "webpack", "sourcemap" ]
+//     },
+//     webpack: webpackConfig,
+//     webpackServer: {
+//       noInfo: true
+//     }
+//   };
+// }
 
-function local() {
-  return _.extend(base(), {
-    browsers: ["Chrome"],
-    reporters: ["mocha"]
-  });
-}
+// function local() {
+//   return _.extend(base(), {
+//     browsers: ["Chrome"],
+//     reporters: ["mocha"]
+//   });
+// }
 
 // function sauceLabs() {
 //   var customLaunchers = {
