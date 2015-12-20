@@ -73,6 +73,6 @@ module.exports = function (config) {
     // We are on travis
     //config.set(sauceLabs());
   //} else {
-  config.set(local());
+  //config.set(local());
   //}
 };
