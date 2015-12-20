@@ -1,0 +1,21 @@
+sudo: false
+language: node_js
+node_js:
+- 4.1.2
+before_install:
+- npm install -g npm@latest
+script:
+- npm run lint
+- npm test
+
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: scripts/deploy.sh
+  on:
+    branch: master
+
+env:
+  global:
+  #- GH_REF: github.com/jamiecrisman/<your repo>.git
+  #- secure: #long fricken string here

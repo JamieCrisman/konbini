@@ -1,0 +1,60 @@
+@import '../../node_modules/materialize-css/dist/css/materialize.css';
+
+.review-link {
+  margin-right: 10px;
+}
+
+.react-spinner {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  top: 50%;
+  left: 50%;
+}
+
+.chip-tags {
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 0 8px;
+  height: 24px;
+  line-height: 24px;
+}
+
+.title-icon {
+  margin-bottom: -3px;
+  padding-top: 4px;
+  fill: rgba(60, 60, 60, 0.7) !important;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
