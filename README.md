@@ -1,10 +1,8 @@
 # app.exploreapollo.org
 
-[![Build Status](https://travis-ci.org/UTD-CRSS/app.exploreapollo.org.svg?branch=master)](https://travis-ci.org/UTD-CRSS/app.exploreapollo.org)
-[![Dependency Status](https://david-dm.org/UTD-CRSS/app.exploreapollo.org.svg)](https://david-dm.org/UTD-CRSS/app.exploreapollo.org)
-[![devDependency Status](https://david-dm.org/UTD-CRSS/app.exploreapollo.org/dev-status.svg)](https://david-dm.org/UTD-CRSS/app.exploreapollo.org#info=devDependencies)
-
-[![Sauce Test Status](https://saucelabs.com/browser-matrix/utd-crss.svg)](https://saucelabs.com/u/utd-crss)
+[![Build Status](https://travis-ci.org/JamieCrisman/konbini.svg)](https://travis-ci.org/JamieCrisman/konbini)
+[![Dependency Status](https://david-dm.org/jamiecrisman/konbini.svg)](https://david-dm.org/jamiecrisman/konbini)
+[![devDependency Status](https://david-dm.org/jamiecrisman/konbini/dev-status.svg)](https://david-dm.org/jamiecrisman/konbini#info=devDependencies)
 
 ## Development
 

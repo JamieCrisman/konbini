@@ -7,15 +7,13 @@ before_install:
 script:
 - npm run lint
 - npm test
-
 deploy:
   skip_cleanup: true
   provider: script
   script: scripts/deploy.sh
   on:
     branch: master
-
 env:
   global:
-  #- GH_REF: github.com/jamiecrisman/<your repo>.git
-  #- secure: #long fricken string here
+  - GH_REF: github.com/JamieCrisman/konbini.git
+  - secure: qH57es3s4JpuWe6sMv8CUxXDGkS5EczHh9C0iHynsIp0rMwifNhA10UBGdMRh9TephIWhO9sBbZK5dmhZzIsO1MV5UXSUptIUDcAxksN4M8JtJg0Qlzap4xWJ5j6Vc2geHureRD5lcShq/r8HJgxhPtjeXKMJeN++iFWsBNGtIvzptxUFktYUrowoMmPjaMw8Qt31avdAbDIWLYxPkpfVXlxWgr1DfexJMFDyUvmYIQ7dtraSb76dIOBglvg/HttBnwRwVfWA7wZBHNJlBIBoVQk6297v/Hac6eFf9Eibgw9z1/V8Bfz0HG3x4KmH10KdD4hitI3qM789xvgZFklRuTmMJRbAM06xXhC29LYrzN8+pIsOPvdwh87RADd29h+ECflaXX8EBymbSlCw0PrfcJwth9sZrxJUb20X8a7LGaSD5tnwXxdCqU6BvFA32OApKZxfN2XWkDug4uuz85fDau6CHnxa/TFJEnhMc/WHF7cEjmUuaKzV09lDXbGHbSMgw+cdKpEwW+xsWcrrf08NXKGXyGKTurBrqVyKVzLCXPd04+pD2JQWPYElC+F6E/utKsSdSZvAeZZy4YkXAcPN67nvpbgYMU7gVrB0I5UiYPBE1wGQLVKwZH99rBPuq3NRVi6IporIxNDY3IDU/IsflaA1v4qmGsf+CU4b1kbaww=
