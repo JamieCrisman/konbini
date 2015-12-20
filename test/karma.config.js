@@ -1,5 +1,5 @@
-/*eslint-env node*/
-var webpackConfig = require("../webpack.config.js");
+// /*eslint-env node*/
+// var webpackConfig = require("../webpack.config.js");
 // var _ = require("lodash");
 
 // function base() {
@@ -68,11 +68,11 @@ var webpackConfig = require("../webpack.config.js");
 //   });
 // }
 
-module.exports = function (config) {
-  //if (process.env.CONTINUOUS_INTEGRATION) {
-    // We are on travis
-    //config.set(sauceLabs());
-  //} else {
-  //config.set(local());
-  //}
-};
+// module.exports = function (config) {
+//   if (process.env.CONTINUOUS_INTEGRATION) {
+//     // We are on travis
+//     config.set(sauceLabs());
+//   } else {
+//     config.set(local());
+//   }
+// };
