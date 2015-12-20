@@ -1,4 +1,4 @@
-# app.exploreapollo.org
+# Konbini
 
 [![Build Status](https://travis-ci.org/JamieCrisman/konbini.svg)](https://travis-ci.org/JamieCrisman/konbini)
 [![Dependency Status](https://david-dm.org/jamiecrisman/konbini.svg)](https://david-dm.org/jamiecrisman/konbini)
