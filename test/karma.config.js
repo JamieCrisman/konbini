@@ -55,7 +55,7 @@ function sauceLabs() {
 
   return _.extend(base(), {
     sauceLabs: {
-      testName: "UTD CRSS Apollo SPA Tests"
+      testName: "Konbini Tests"
     },
     browserDisconnectTimeout: 10000,
     browserDisconnectTolerance: 1,
@@ -69,10 +69,10 @@ function sauceLabs() {
 }
 
 module.exports = function (config) {
-  if (process.env.CONTINUOUS_INTEGRATION) {
+  //if (process.env.CONTINUOUS_INTEGRATION) {
     // We are on travis
-    config.set(sauceLabs());
-  } else {
+    //config.set(sauceLabs());
+  //} else {
     config.set(local());
-  }
+  //}
 };
