@@ -2,26 +2,26 @@
 // var webpackConfig = require("../webpack.config.js");
 // var _ = require("lodash");
 
-// function base() {
-//   return {
-//     frameworks: ["mocha"],
-//     files: ["tests.webpack.js"],
-//     preprocessors: {
-//       "tests.webpack.js": [ "webpack", "sourcemap" ]
-//     },
-//     webpack: webpackConfig,
-//     webpackServer: {
-//       noInfo: true
-//     }
-//   };
-// }
+function base() {
+  return {
+    frameworks: ["mocha"],
+    files: ["tests.webpack.js"],
+    preprocessors: {
+      "tests.webpack.js": [ "webpack", "sourcemap" ]
+    },
+    webpack: webpackConfig,
+    webpackServer: {
+      noInfo: true
+    }
+  };
+}
 
-// function local() {
-//   return _.extend(base(), {
-//     browsers: ["Chrome"],
-//     reporters: ["mocha"]
-//   });
-// }
+function local() {
+  return _.extend(base(), {
+    browsers: [], //Chrome
+    reporters: ["mocha"]
+  });
+}
 
 // function sauceLabs() {
 //   var customLaunchers = {
@@ -69,11 +69,11 @@
 // }
 
 module.exports = function (config) {
-  console.log(config == config); //lol
   // if (process.env.CONTINUOUS_INTEGRATION) {
   //   // We are on travis
   //   config.set(sauceLabs());
   // } else {
   //   config.set(local());
   // }
+  config.set(local());
 };
