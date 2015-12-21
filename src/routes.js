@@ -14,6 +14,7 @@ import {
 export default (
     <Route name="app" path="/" component={App}>
       <IndexRoute component={Dashboard} />
+      <Route path="/konbini/" component={Dashboard} />
       <Route path="*" component={NoMatch}/>
     </Route>
 );
