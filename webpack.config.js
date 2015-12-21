@@ -16,7 +16,7 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      title: "KONBINI・コンビニ・Japanese Language Resource Catalog", 
+      title: "KONBINI・コンビニ・Japanese Language Learning Resource Directory", 
       template: "./src/index.html", // Load a custom template
       inject: "body" //scripts are injected to here
     }),

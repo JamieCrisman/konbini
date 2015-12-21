@@ -30,7 +30,7 @@ export class AppFooter extends Component {
             <div className="col l4 offset-l2 s12">
               <h5 className="white-text">Links</h5>
               <ul>
-                <li><a className="grey-text text-lighten-3" href="#">Github Repo</a></li>
+                <li><a className="grey-text text-lighten-3" href="https://github.com/JamieCrisman/konbini">Github Repo</a></li>
                 <li><a className="grey-text text-lighten-3" href="http://longest.voyage">Longest.Voyage</a></li>
               </ul>
             </div>
