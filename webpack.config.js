@@ -10,7 +10,7 @@ module.exports = {
 
   output: {
     path: path.join(__dirname, "dist"),
-    publicPath: "/",
+    publicPath: "http://jamiecrisman.github.io/konbini/",
     filename: process.env.NODE_ENV === "production" ? "bundle-[hash].js" : "bundle.js"
   },
 
