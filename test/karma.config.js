@@ -68,11 +68,12 @@
 //   });
 // }
 
-// module.exports = function (config) {
-//   if (process.env.CONTINUOUS_INTEGRATION) {
-//     // We are on travis
-//     config.set(sauceLabs());
-//   } else {
-//     config.set(local());
-//   }
-// };
+module.exports = function (config) {
+  console.log(config == config); //lol
+  // if (process.env.CONTINUOUS_INTEGRATION) {
+  //   // We are on travis
+  //   config.set(sauceLabs());
+  // } else {
+  //   config.set(local());
+  // }
+};
