@@ -1,6 +1,6 @@
-// /*eslint-env node*/
-// var webpackConfig = require("../webpack.config.js");
-// var _ = require("lodash");
+/*eslint-env node*/
+var webpackConfig = require("../webpack.config.js");
+var _ = require("lodash");
 
 function base() {
   return {
