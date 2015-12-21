@@ -1,4 +1,4 @@
-w#!/bin/bash
+#!/usr/bin/env bash
 set -eo pipefail
 
 export NODE_ENV=production
