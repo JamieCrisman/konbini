@@ -33,7 +33,7 @@ export const resourceData = [
       max: 300
     },
     level: ["beginner", "intermediate", "advanced"],
-    topics: ["kanji", "jlpt", "practice"],
+    topics: ["kanji", "vocabulary"],
     reviews: []
   },
   {
@@ -212,7 +212,7 @@ export const resourceData = [
       max: 0
     },
     level: ["beginner", "intermediate", "advanced"],
-    topics: ["practice", "kana", "kanji", "vocabulary", "jlpt"],
+    topics: ["kana", "kanji", "vocabulary", "jlpt"],
     reviews: []
   },
   {
@@ -231,7 +231,7 @@ export const resourceData = [
       max: 0
     },
     level: ["beginner", "intermediate", "advanced"],
-    topics: ["practice", "kana", "kanji", "vocabulary", "jlpt"],
+    topics: ["kana", "kanji", "vocabulary", "jlpt"],
     reviews: []
   },
   {
@@ -252,7 +252,7 @@ export const resourceData = [
       max: 50
     },
     level: ["beginner", "intermediate", "advanced"],
-    topics: ["practice", "kana", "kanji", "vocabulary", "grammar"],
+    topics: ["kana", "kanji", "vocabulary", "grammar"],
     reviews: [{
       id: 1,
       website_title: "Tofugu Review",
@@ -338,9 +338,139 @@ export const resourceData = [
     level: ["beginner", "intermediate", "advanced"],
     topics: ["practice"],
     reviews: []
+  },
+  {
+    id: 19,
+    name: "Maggie Sensei",
+    type: "website", //book, podcast, ...?
+    description: "Tons of cute lessons over various topics.",
+    url: [
+      {id: 0, url: "http://maggiesensei.com/", website_title: "Website"}
+    ],
+    cost: {
+      hasCost: false,
+      is_subscription: false,
+      price: "free",
+      min: 0,
+      max: 0
+    },
+    level: ["beginner", "intermediate", "advanced"],
+    topics: ["grammar", "vocabulary"],
+    reviews: []
+  },
+  {
+    id: 20,
+    name: "Japanese For Morons",
+    type: "video", //book, podcast, ...?
+    description: "Tons of bite sized video lessons",
+    url: [
+      {id: 0, url: "https://www.youtube.com/user/japaneseformorons", website_title: "Youtube Channel"}
+    ],
+    cost: {
+      hasCost: false,
+      is_subscription: false,
+      price: "free",
+      min: 0,
+      max: 0
+    },
+    level: ["beginner", "intermediate"],
+    topics: ["grammar", "vocabulary"],
+    reviews: []
+  },
+  {
+    id: 21,
+    name: "Bilingual Chika",
+    type: "video", //book, podcast, ...?
+    description: "Most of Chikas videos are geared towards Japanese people learning English, but it can work the other way as well. She also has an English channel about Japan called Japanagos, but that channel does not have as many video lessons.",
+    url: [
+      {id: 0, url: "https://www.youtube.com/user/cyoshida1231", website_title: "Bilingual Chika"},
+      {id: 1, url: "https://www.youtube.com/user/japanagos", website_title: "Japanagos"}
+    ],
+    cost: {
+      hasCost: false,
+      is_subscription: false,
+      price: "free",
+      min: 0,
+      max: 0
+    },
+    level: ["intermediate", "advanced"],
+    topics: ["grammar", "vocabulary"],
+    reviews: []
+  },
+  {
+    id: 22,
+    name: "Nihongonomori",
+    type: "video", //book, podcast, ...?
+    description: "Tons of often goofy videos that go over grammar topics. Most of the videos are geared towards the JLPT",
+    url: [
+      {id: 0, url: "http://www.nihongonomori.com/", website_title: "Website"},
+      {id: 1, url: "https://www.youtube.com/user/freejapaneselessons3", website_title: "YouTube Channel"}
+    ],
+    cost: {
+      hasCost: false,
+      is_subscription: false,
+      price: "free",
+      min: 0,
+      max: 0
+    },
+    level: ["beginner", "intermediate", "advanced"],
+    topics: ["grammar", "vocabulary", "jlpt"],
+    reviews: []
+  },
+  {
+    id: 23,
+    name: "Genki",
+    type: "book", //book, podcast, ...?
+    description: "Great beginner series to get a foundation to learn Japanese. A little expensive compared to other starting books, but has a lot of content. Content is geared towards student life.",
+    url: [
+      {id: 0, url: "http://www.amazon.com/GENKI-Integrated-Elementary-Japanese-English/dp/4789014401", website_title: "Amazon: Textbook"},
+      {id: 1, url: "http://www.amazon.com/Genki-Integrated-Elementary-Japanese-Workbook/dp/478901441X", website_title: "Amazon: Workbook"}
+    ],
+    cost: {
+      hasCost: true,
+      is_subscription: false,
+      price: "$25-$50ish",
+      min: 25,
+      max: 50
+    },
+    level: ["beginner", "intermediate"],
+    topics: ["grammar", "vocabulary", "kanji"],
+    reviews: [{
+      id: 1,
+      website_title: "Tofugu Review",
+      url: "http://www.tofugu.com/reviews/genki-textbook-review/"
+    }]
+  },
+  {
+    id: 24,
+    name: "Nihongo So-Matome",
+    type: "book", //book, podcast, ...?
+    description: "Collection of workbooks to help study for JLPT. While some have passsed the JLPT using this series I would recommend checking out the review before purchasing. Books cost 15-20 each.",
+    url: [
+      {id: 0, url: "http://shop.whiterabbitjapan.com/products/nihongo-so-matome-jlpt-n3-5-book-set", website_title: "White Rabbit: N3 5-Book Set"},
+      {id: 1, url: "http://shop.whiterabbitjapan.com/products/nihongo-so-matome-jlpt-n2-5-book-set", website_title: "White Rabbit: N2 5-Book Set"},
+      {id: 2, url: "http://shop.whiterabbitjapan.com/products/nihongo-so-matome-jlpt-n1-5-book-set", website_title: "White Rabbit: N1 5-Book Set"}
+    ],
+    cost: {
+      hasCost: true,
+      is_subscription: false,
+      price: "$20ish each",
+      min: 15,
+      max: 100
+    },
+    level: ["intermediate", "advanced"],
+    topics: ["grammar", "vocabulary", "kanji", "jlpt"],
+    reviews: [{
+      id: 1,
+      website_title: "Tofugu Review",
+      url: "http://www.tofugu.com/reviews/nihongo-matome/"
+    }]
   }
 ];
 
+
+//
+//
 // {
 //     id: 2,
 //     name: "another resource",
@@ -366,3 +496,38 @@ export const resourceData = [
 //       url: "http://www.google.com"
 //     }]
 //   },
+
+
+export const defaultFilters = {
+  type: {
+    any: true,
+    website: false,
+    book: false,
+    video: false
+  },
+  topics: {
+    any: true,
+    jlpt: false,
+    grammar: false,
+    vocabulary: false,
+    kanji: false,
+    kana: false,
+    practice: false
+  },
+  level: {
+    any: true,
+    beginner: false,
+    intermediate: false,
+    advanced: false
+  },
+  other: {
+    free: false,
+    reviews: false
+  }
+};
+
+export const customColors = {
+  "beginner": "green accent-3",
+  "intermediate": "amber darken-2",
+  "advanced": "deep-orange darken-1"
+};

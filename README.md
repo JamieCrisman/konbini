@@ -20,11 +20,6 @@ Other useful commands:
 * `npm run tdd` to continuously run tests as you code
 * `npm run lint` to check your changes against the linting guidelines
 
-**Note about HTTPS and the development server:** the development server uses a
-self-signed SSL certificate. When you open the development server for the first
-time it will squawk about the certificate being invalid. The certificate is not
-invalid or insecure, it is just self-signed.
-
 ### Branches and Versioning
 
 The `master` is considered "hot" and is continuously deployed to a staging

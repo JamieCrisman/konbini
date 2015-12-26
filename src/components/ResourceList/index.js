@@ -1,10 +1,15 @@
 import React, {Component} from "react";
 import classNames from "classnames";
+import _ from "lodash";
 //import mui from "material-ui";
 import BookIcon from "react-material-icons/icons/action/book";
 import WebsiteIcon from "react-material-icons/icons/av/web";
 import MovieIcon from "react-material-icons/icons/av/movie";
 import MoneyIcon from "react-material-icons/icons/editor/attach-money";
+
+import {
+  customColors
+} from "../../utils/dummyData";
 
 export class ResourceListItem extends Component {
   componentDidUpdate(){
@@ -57,7 +62,7 @@ export class ResourceListItem extends Component {
         data-tooltip={costString} 
         data-position="top" 
         data-delay="20" 
-        className={classNames({"title-icon": isTitle, "tooltipped": true})}/>
+        className={classNames({"title-icon": isTitle, "tooltipped": true, "money-icon": true})}/>
     );
   }
 
@@ -73,9 +78,10 @@ export class ResourceListItem extends Component {
 
   renderChips(list, chipColor) {
     return list.map((item, index) => {
+      const color = _.get(customColors, [item], chipColor);
       return (
-        <span key={index} className={classNames(["chip", "chip-tags", chipColor])}>
-          {item}
+        <span key={index} className={classNames(["chip", "chip-tags", color])}>
+          {item.toUpperCase()}
         </span>
       );
     });
@@ -110,7 +116,7 @@ export class ResourceListItem extends Component {
           <p>{description}</p>
           {this.renderReviewsContainer(reviews)}
           <div>
-            {this.renderChips(level, "light-blue lighten-2")}{this.renderChips(topics, "indigo lighten-3")}
+            {this.renderChips(level, "light-blue lighten-2")}{this.renderChips(topics, "blue accent-1")}
           </div>
         </div>
         <div className="card-action">

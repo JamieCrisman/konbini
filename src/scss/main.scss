@@ -24,7 +24,10 @@
 .title-icon {
   margin-bottom: -3px;
   padding-top: 4px;
-  fill: rgba(60, 60, 60, 0.7) !important;
+  fill: rgba(60, 60, 60, 0.2) !important;
+  &:hover {
+    fill: rgba(60, 60, 60, 0.7) !important;
+  }
 }
 
 .material-icons {
@@ -52,6 +55,10 @@
 
   /* Support for IE. */
   font-feature-settings: 'liga';
+}
+
+.title-icon.money-icon {
+  fill: #4caf50 !important;
 }
 
 .clearfix {
